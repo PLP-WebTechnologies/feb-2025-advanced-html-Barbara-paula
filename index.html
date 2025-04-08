@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html elements and forms</title>
+</head>
+<body>
+    <header>
+        <h1>ELEMENTS AND FORMS</h1>
+        <nav>
+            <ul>
+                <li><a href="#lists">LISTS</a></li>
+                <li><a href="#image">IMAGE, AUDIO AND VIDEOS</a></li>
+                <li><a href="#contacts" >CONTACTS</a></li>
+                <li><a href="#registration">REGISTRATION</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="lists">
+            <h2>SHOE LISTS</h2>
+            <ol type="i">
+                <li>Adidas Campus</li>
+                <li>Puma</li>
+                <li>SB Dunks low</li>
+            </ol>
+        </section>
+        <section id="image">
+            <h2>SHOE IMAGE, AUDIO AND VIDEO</h2>
+            <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shoe picture" width="300" height="300">
+            <img src="https://images.pexels.com/photos/29521391/pexels-photo-29521391/free-photo-of-stylish-white-and-green-casual-shoes-on-yellow-background.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shoe picture" width="300" height="300">
+            <img src="https://images.pexels.com/photos/16947160/pexels-photo-16947160/free-photo-of-nikes-sneakers-on-white-background-with-wrapped-candies.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shoe picture" width="300" height="300">
+            <video src="https://videos.pexels.com/video-files/853958/853958-sd_640_360_30fps.mp4"width="640" height="360" controls ></video>
+        </section>
+        <section id="contats">
+            <h2>CONTACTS TABLE</h2>
+            <table>
+                <caption>Contacts</caption>
+                <tr>
+                    <th>NAME</th>
+                    <th>ADDRESS</th>
+                    <th>MOBILE</th>
+                    <th>EMAILS</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>76</td>
+                    <td>0789678567</td>
+                    <td>john@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>98</td>
+                    <td>0734567243</td>
+                    <td>mary@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Tony</td>
+                    <td>33</td>
+                    <td>076649472</td>
+                    <td>tony@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Joy</td>
+                    <td>24</td>
+                    <td>072356364</td>
+                    <td>joy@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Milly</td>
+                    <td>75</td>
+                    <td>07353543</td>
+                    <td>milly@gmail.com</td>
+                </tr>
+            </table>
+        </section>
+        <section id="registration">
+            <h2>REGISTRATION</h2>
+            <form action="submit" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Write your name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="e.g name@gmail.com" name="emai" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password" name="password" required maxlength="13" minlength="4">
+                <label for="date">Name</label>
+                <input type="date" id="date" placeholder="Todays date" name="date" required>
+                <label for="">Location</label>
+                <select id="county" name="county">
+                    <option value="kisumu">Kisumu</option>
+                    <option value="nairobi">Nairobi</option>
+                    <option value="mombasa">Mombasa</option>
+                    <option value="nakuru">Nakuru</option>
+                </select>
+                <label for="red">Red</label>
+                <input type="radio" id="red" name="color" value="red">
+                <label for="red">Black</label>
+                <input type="radio" id="black" name="color" value="black">
+                <label for="white">White</label>
+                <input type="radio" id="white" name="color" value="white">
+                <br>
+                <label for="high">High</label>
+                <input type="checkbox" id="high" name="preference" value="high">
+                <label for="low">Low</label>
+                <input type="checkbox" id="low" name="low" value="low">
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
